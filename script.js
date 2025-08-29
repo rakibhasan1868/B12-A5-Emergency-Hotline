@@ -41,3 +41,15 @@ function toggleHeart(icon) {
       }
     }
 }
+
+function callNumber(title, number) {
+    let coins = getTextContent("coin");
+    if (coins < 20) {
+        alert("আপনার পর্যাপ্ত পরিমাণ কয়েন নেই কল করতে ২০ কয়েন লাগবে ");
+        return;
+    }
+    decreaseCount("coin", 20);
+    addCallHistory(title, number);
+    alert('Calling ' + title + ": " +number);
+
+}
