@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Emergency-Hotline</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emergency Service</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-  
+  <header>
+    <nav class="flex items-center justify-between px-4 md:px-10 py-3 bg-white shadow">
+      <div class="flex items-center text-green-700 font-extrabold text-xl md:text-2xl">
+        <img src="assets/logo.png" alt="logo" class="h-8 md:h-16 mr-3" />
+        <span class="leading-tight text-xs sm:text-lg md:text-xl lg:text-2xl">
+          Emergency <br />Services
+        </span>
+
+      </div>
+      <div class="flex items-center space-x-2 md:space-x-4">
+        <div
+          class="bg-green-100 text-black px-2 py-1 md:px-6 md:py-2 rounded-2xl md:rounded-3xl font-bold md:font-extrabold flex items-center text-sm md:text-base">
+          <span id="heart">0</span>
+          <img src="assets/heart.png" alt="heart" class="h-4 md:h-6 ml-1" />
+        </div>
+        <div
+          class="bg-green-100 text-black px-2 py-1 md:px-6 md:py-2 rounded-2xl md:rounded-3xl font-bold md:font-extrabold flex items-center text-sm md:text-base">
+          <span id="coin">100</span>
+          <img src="assets/coin.png" alt="coin" class="h-4 md:h-6 ml-1" />
+        </div>
+        <div
+          class="bg-green-600 px-2 py-1 md:px-6 md:py-2 rounded-2xl md:rounded-3xl text-white font-medium md:font-semibold flex items-center justify-center text-sm md:text-base">
+          <span id="copy" class="mr-1">0</span> Copy
+        </div>
+      </div>
+    </nav>
+  </header>
 </body>
+
 </html>
